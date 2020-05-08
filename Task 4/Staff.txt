@@ -1,0 +1,9 @@
+Username : ugohuche,
+Password : somepassword10,
+Email : ugohuche@someemail.com,
+Full name : Ugoh Uchenna.
+
+Username : uche
+Password : anotherpassword10,
+Email : uche@email.com,
+Full name : Uche
