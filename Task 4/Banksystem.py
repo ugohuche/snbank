@@ -55,7 +55,7 @@ def staff_login():
 
 
 def account_actions(username):
-    print("What would you like to do now ?")
+    print("\nWhat would you like to do now ?")
     print("1 : Create New Bank Account")
     print("2 : Check Account Details")
     print("3 : Logout")
@@ -71,7 +71,7 @@ def account_actions(username):
         customer_file = open("Customer.txt", 'a').write(f'{account_number}\n{account_name}\n{account_type}\n{account_email}\n{opening_balance}\n\n')
         print("Account created successfully")
         print(f"Your account number is {account_number}")
-        account_actions()
+        account_actions(username)
 
 
 
@@ -81,7 +81,7 @@ def account_actions(username):
         if check_string_file('Customer.txt', account_detail):
             print(in_customer_file.read())
             in_customer_file.close()
-            account_actions()
+            account_actions(username)
 
     if (answer == "3") or (answer.lower() == "logout"):
         user_file = f"{username}.txt"
